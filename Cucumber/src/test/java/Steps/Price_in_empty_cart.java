@@ -5,6 +5,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
 
 import java.time.Duration;
 
@@ -33,6 +34,7 @@ public class Price_in_empty_cart
         driver.findElement(By.xpath("//*[@value=\"Login\"]")).click();
         Thread.sleep(3000);
     }
+    @Test
     @Then("Check Price in Cart")
     public void check_price_in_cart()
     {

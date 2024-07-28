@@ -45,6 +45,7 @@ public class login_with_invalid_credentials
         driver.findElement(By.xpath("//*[@value=\"Login\"]")).click();
         Thread.sleep(3000);
     }
+    @Test
     @When("Gets Error Message")
     public void gets_error_message()
     {

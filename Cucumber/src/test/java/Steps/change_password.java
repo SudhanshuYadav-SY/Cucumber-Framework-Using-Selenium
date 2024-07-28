@@ -39,6 +39,7 @@ public class change_password
         driver.findElement(By.linkText("Password")).click();
         Thread.sleep(3000);
     }
+    @Test
     @Then("User changes Password")
     public void user_changes_password() throws InterruptedException {
         driver.findElement(By.name("password")).sendKeys("12345");

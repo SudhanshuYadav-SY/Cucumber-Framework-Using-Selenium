@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
 
 import java.time.Duration;
 
@@ -57,6 +58,7 @@ public class Dismiss_Added_Product
         else
             System.out.println("Product NOT Added to Cart Successfully!!");
     }
+    @Test
     @Then("User removes Product from Cart")
     public void user_removes_product_from_cart() throws InterruptedException
     {
@@ -66,6 +68,7 @@ public class Dismiss_Added_Product
         driver.findElement(By.xpath("//*[@class='fa fa-times-circle']")).click();
         Thread.sleep(3000);
         String msg = driver.findElement(By.xpath("//*[@id='content']")).getText();
+        System.out.println(msg);
         driver.findElement(By.linkText("Continue")).click();
         Thread.sleep(3000);
     }

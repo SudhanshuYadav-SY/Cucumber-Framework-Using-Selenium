@@ -7,6 +7,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
 
 import java.time.Duration;
 
@@ -49,6 +50,7 @@ public class search_valid_product
             System.out.println("Login NOT Successful And We Can't Proceed to Product Search");
         }
     }
+    @Test
     @Then("User search a valid product")
     public void user_search_a_valid_product() throws InterruptedException
     {

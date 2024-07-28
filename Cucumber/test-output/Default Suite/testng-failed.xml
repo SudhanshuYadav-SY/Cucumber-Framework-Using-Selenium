@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Cucumber(failed)">
+    <classes>
+      <class name="Steps.get_Product_Description">
+        <methods>
+          <include name="user_gets_product_description"/>
+        </methods>
+      </class> <!-- Steps.get_Product_Description -->
+    </classes>
+  </test> <!-- Cucumber(failed) -->
+</suite> <!-- Failed suite [Default Suite] -->
