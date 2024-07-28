@@ -7,3 +7,4 @@ Feature: User searches for a invalid product
     Then Navigates to Home Page
     Then User Sign in to System using valid credentials
     And Search for an InValid Product
+    Then User Ends Automation Window

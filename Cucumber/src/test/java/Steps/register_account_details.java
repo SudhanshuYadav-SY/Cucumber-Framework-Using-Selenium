@@ -44,10 +44,15 @@ public class register_account_details
     {
         driver.findElement(By.id("input-firstname")).sendKeys("Aarushi");
         driver.findElement(By.name("lastname")).sendKeys("Savitri");
-        driver.findElement(By.name("email")).sendKeys("aarushi.savitri@gmail.com");
+        driver.findElement(By.name("email")).sendKeys("aarushi.savitri.selenium.cucumber@gmail.com");
         driver.findElement(By.name("telephone")).sendKeys("+91-978787890");
         driver.findElement(By.name("password")).sendKeys("Aarushi@123");
         driver.findElement(By.name("confirm")).sendKeys("Aarushi@123");
         driver.findElement(By.xpath("//*[text()='Yes']")).click();
+    }
+    @Then("User quits browser")
+    public void user_quits_browser()
+    {
+        driver.quit();
     }
 }

@@ -7,3 +7,4 @@ Feature: User is able to create an account
     Then User is on the home page
     Then User reaches Registeration Page
     Then User enters the Details Requested
+    Then User quits browser
