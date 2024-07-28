@@ -7,7 +7,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
-
 import java.time.Duration;
 
 public class login_page_implementation
@@ -20,35 +19,41 @@ public class login_page_implementation
     }
 
     @Given("maximise the automation window")
-    public void maximise_the_automation_window() {
+    public void maximise_the_automation_window()
+    {
         driver.manage().window().maximize();
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     }
 
     @Then("user is on the home page")
-    public void user_is_on_the_home_page() {
+    public void user_is_on_the_home_page()
+    {
         driver.get("https://tutorialsninja.com/demo/");
     }
 
     @Then("User navigates to the login page")
-    public void user_navigates_to_the_login_page() {
+    public void user_navigates_to_the_login_page()
+    {
         driver.findElement(By.xpath("(//*[text()='My Account'])[1]")).click();
         driver.findElement(By.linkText("Login")).click();
     }
 
     @Then("User enters a valid user email id")
-    public void user_enters_a_valid_user_email_id() {
+    public void user_enters_a_valid_user_email_id()
+    {
         driver.findElement(By.name("email")).sendKeys("amotooricap9@gmail.com");
     }
 
     @Then("User enters a valid user password associated the email id")
-    public void user_enters_a_valid_user_password_associated_the_email_id() {
+    public void user_enters_a_valid_user_password_associated_the_email_id()
+    {
         driver.findElement(By.name("password")).sendKeys("1234");
     }
 
     @Then("User clicks on Login")
-    public void user_clicks_on_login() {
+    public void user_clicks_on_login()
+    {
         driver.findElement(By.xpath("//*[@value=\"Login\"]")).click();
     }
 
