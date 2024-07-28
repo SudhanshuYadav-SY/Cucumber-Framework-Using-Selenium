@@ -6,3 +6,4 @@ Feature: User searches for a valid product
     Then User opens home page
     Then User logs in using valid credentials
     Then User search a valid product
+    And  User closes Chrome
